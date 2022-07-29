@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import com.bumptech.glide.Glide
 import com.nepplus.day05.datas.StoreData
 import kotlinx.android.synthetic.main.store_list_item.view.*
 
@@ -26,6 +27,10 @@ class StoreListViewAdapter(
         val data = mList[position]
         row.titleTxt.text = data.title
         row.scoreRatingBar.rating = data.score.toFloat()
+
+        Glide.with(mcontext)//글라이드 활용할건데 이 화면에서 사용할거다
+            .load(data.imgUrl)
+            .into(row.storeImageView) //어디에 쓸건지 id 적어주기
 
         return row
     }

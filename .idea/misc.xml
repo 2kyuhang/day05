@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/_work/day05/app/src/main/res/layout/activity_main.xml" value="0.33177083333333335" />
+        <entry key="..\:/_work/day05/app/src/main/res/layout/activity_splash.xml" value="0.2713541666666667" />
         <entry key="..\:/_work/day05/app/src/main/res/layout/fragment_pizza.xml" value="0.3307291666666667" />
         <entry key="..\:/_work/day05/app/src/main/res/layout/fragment_profile.xml" value="0.19195046439628483" />
         <entry key="..\:/_work/day05/app/src/main/res/layout/store_list_item.xml" value="0.25" />
