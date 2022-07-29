@@ -48,5 +48,7 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
     /*로티 영상 넣는것?*/
     implementation 'com.airbnb.android:lottie:5.2.0'
+    /*tedPermission call 기능 작성 권한획득*/
+    implementation 'io.github.ParkSangGwon:tedpermission-normal:3.3.0'
 
 }
