@@ -4,11 +4,11 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import com.nepplus.day05.datas.StoreData
+import kotlinx.android.synthetic.main.store_list_item.view.*
 
-class StoreListAdapter(
+class StoreListViewAdapter(
     val mcontext : Context,
     val resId : Int,
     val mList : ArrayList<StoreData>
@@ -22,6 +22,10 @@ class StoreListAdapter(
         }
         //안전하게 하기 위해서 이렇게 다시 변수에 !! 붙여 넣는다
         val row = tompRow!!
+
+        val data = mList[position]
+        row.titleTxt.text = data.title
+        row.scoreRatingBar.rating = data.score.toFloat()
 
         return row
     }
