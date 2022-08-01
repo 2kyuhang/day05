@@ -92,4 +92,11 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/goHomePageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="공식 홈페이지 방문하기"/>
+
+
 </LinearLayout>

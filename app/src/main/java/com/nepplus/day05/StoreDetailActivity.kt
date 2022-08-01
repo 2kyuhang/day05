@@ -61,5 +61,12 @@ class StoreDetailActivity : AppCompatActivity() {
                 .check()
         }
 
+        //홈페이지 이동하기
+        goHomePageBtn.setOnClickListener {
+            val myUri = Uri.parse("https://www.pizzahut.co.kr/")
+            val myIntent = Intent(Intent.ACTION_VIEW, myUri)
+            startActivity(myIntent)
+        }
+
     }
 }
