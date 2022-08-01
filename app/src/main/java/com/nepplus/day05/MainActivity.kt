@@ -19,5 +19,8 @@ class MainActivity : AppCompatActivity() {
 
         mainTabLayout.setupWithViewPager(mainViewPager)
 
+        //이건 페이지를 3개는 반드시 시켜놓아라 // 그래야 데이터가 onActivityCreated되어도 중복생성 X
+        mainViewPager.offscreenPageLimit = 3
+
     }
 }

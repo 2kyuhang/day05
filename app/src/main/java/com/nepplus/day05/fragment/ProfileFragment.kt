@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.nepplus.day05.DetailProfileImageActivity
 import com.nepplus.day05.ProfileActivity
 import com.nepplus.day05.R
 import com.nepplus.day05.adapters.StoreListViewAdapter
@@ -32,6 +33,13 @@ class ProfileFragment: Fragment(){
 
         val myIntent = Intent(requireContext(), ProfileActivity::class.java)
         startActivityForResult(myIntent, REQ_FOR_NICK)
+
+
+        //프로필 이미지 누르면 확대
+        profileImg.setOnClickListener {
+            val myIntent = Intent(requireContext(), DetailProfileImageActivity::class.java)
+            startActivity(myIntent)
+        }
 
     }
 

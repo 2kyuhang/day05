@@ -3,6 +3,7 @@ package com.nepplus.day05.adapters
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.nepplus.day05.fragment.ChickenFragment
 import com.nepplus.day05.fragment.PizzaFragment
 import com.nepplus.day05.fragment.ProfileFragment
 
@@ -13,13 +14,14 @@ class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
         return 3
     }
     */
-    override fun getCount() = 2//아래처럼 축약 가능!!!
+    override fun getCount() = 3//아래처럼 축약 가능!!!
 
 
     //position 값에 따라 어떤 걸 return 해줄건지?
     override fun getItem(position: Int): Fragment {
         return when(position){
             0 -> PizzaFragment()
+            1 -> ChickenFragment()
             else -> ProfileFragment()
         }
     }
@@ -28,6 +30,7 @@ class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getPageTitle(position: Int): CharSequence? {
         return when(position){
             0 -> "피자주문"
+            1 -> "치킨주문"
             else -> "내 정보 설정"
         }
     }

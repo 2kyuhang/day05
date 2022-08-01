@@ -50,5 +50,8 @@ dependencies {
     implementation 'com.airbnb.android:lottie:5.2.0'
     /*tedPermission call 기능 작성 권한획득*/
     implementation 'io.github.ParkSangGwon:tedpermission-normal:3.3.0'
+    /*이미지 확대 축소*/
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
 
 }
